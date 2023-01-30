@@ -5,7 +5,7 @@ LABEL com.github.containers.toolbox="true" \
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get -y install sudo libcap2-bin openvpn && \
+    apt-get -y install sudo libcap2-bin openvpn kali-linux-headless && \
     apt-get clean
 
 RUN sed -i -e 's/ ALL$/ NOPASSWD:ALL/' /etc/sudoers
