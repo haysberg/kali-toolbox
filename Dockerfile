@@ -4,7 +4,7 @@ LABEL com.github.containers.toolbox="true" \
       com.github.debarshiray.toolbox="true"
 
 RUN apt-get update && \
-    apt-get upgrade && \
+    apt-get upgrade -y && \
     apt-get -y install sudo libcap2-bin && \
     apt-get clean
 
